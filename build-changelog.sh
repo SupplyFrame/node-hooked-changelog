@@ -77,8 +77,10 @@ log=$(git log $1...$2 --pretty=format:"%H %s")
 # filter out merge commits
 log=$(echo "${log}" | grep -v '^[a-f0-9]\+\sMerge')
 
+myPath=${3:-./node_modules/node-hooked-changelog}
+
 #find bug url of repository
-package=$(./node_modules/node-hooked-changelog/node_modules/JSON.sh/JSON.sh -b < package.json)
+package=$(${myPath}/node_modules/JSON.sh/JSON.sh -b < package.json)
 bugsUrl=$(extractParams "${package}" "" bugs url)
 moduleName=$(extractParams "${package}" "" name)
 title=$(extractParams "${package}" "${moduleName}" changelog title)
@@ -90,11 +92,11 @@ if [ -z "$issueUrlTemplate" ] && [ ! -z "$bugsUrl" ]
 	issueUrlTemplate="${bugsUrl}/\${issueId}"
 fi
 # read templates
-headerTemplate=$(extractParams "${package}" "./node_modules/node-hooked-changelog/header.template" changelog template header)
-footerTemplate=$(extractParams "${package}" "./node_modules/node-hooked-changelog/footer.template" changelog template footer)
-commitTemplate=$(extractParams "${package}" "./node_modules/node-hooked-changelog/commit.template" changelog template commit)
-issueTemplate=$(extractParams "${package}" "./node_modules/node-hooked-changelog/issue.template" changelog template issue)
-versionTemplate=$(extractParams "${package}" "./node_modules/node-hooked-changelog/version.template" changelog template version)
+headerTemplate=$(extractParams "${package}" "${myPath}/header.template" changelog template header)
+footerTemplate=$(extractParams "${package}" "${myPath}/footer.template" changelog template footer)
+commitTemplate=$(extractParams "${package}" "${myPath}/commit.template" changelog template commit)
+issueTemplate=$(extractParams "${package}" "${myPath}/issue.template" changelog template issue)
+versionTemplate=$(extractParams "${package}" "${myPath}/version.template" changelog template version)
 
 version="XX.XX.XX"
 
