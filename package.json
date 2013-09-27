@@ -1,7 +1,7 @@
 {
   "name": "node-hooked-changelog",
   "description": "Installs a post-commit hook that triggers a changelog update whenever a commit containing a new version number is created, this works best with `npm version`.",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": true,
   "scripts": {
     "install": "bash ./install-hooks.sh"
