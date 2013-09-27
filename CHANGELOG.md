@@ -1,4 +1,7 @@
 # Node Hooked Changelog Changelog
+
+##[v0.0.5](https://github.com/SupplyFrame/node-hooked-changelog/commit/1d4ff945a12189ce47092427db0280b341a56b63)
+- Added newlines before version templates - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/50bf35914777ffef187169634e6e65d120369356)
 - Fixing newline issue in version template - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/8f3b6bf21c51acf5165ed97df44a14fb740674b5)
 
 ##[v0.0.4](https://github.com/SupplyFrame/node-hooked-changelog/commit/6b2f3f9d071537757021f378849376f69952e186)
