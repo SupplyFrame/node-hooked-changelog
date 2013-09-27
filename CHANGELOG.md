@@ -1,6 +1,10 @@
 # Node Hooked Changelog Changelog
 
-##[v0.0.5](https://github.com/SupplyFrame/node-hooked-changelog/commit/1d4ff945a12189ce47092427db0280b341a56b63)
+##[v0.0.6](https://github.com/SupplyFrame/node-hooked-changelog/commit/7e0cd4cc42b9b640f06259abeb1701e74d1a18e0)
+- Removed private status so we can publish to npm - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/db91c2073644234090b9d5b4c45b6301bfbcbdd6)
+- Updated changelog. - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/fa9d5278b2ab68cd62d0dd469298d04a25a87dcd)
+
+##[v0.0.5](https://github.com/SupplyFrame/node-hooked-changelog/commit/a45107a823faf34345f1292bfa63916b35d3ad0c)
 - Added newlines before version templates - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/50bf35914777ffef187169634e6e65d120369356)
 - Fixing newline issue in version template - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/8f3b6bf21c51acf5165ed97df44a14fb740674b5)
 
