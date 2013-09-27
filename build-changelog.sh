@@ -116,7 +116,7 @@ do
 		commitUrl=$(applyTemplate "${commitUrlTemplate}" commitId "${commitId}")
 		
 		versionLine=$(applyTemplateFile "${versionTemplate}" commitUrl "${commitUrl}" version "${version}" commitId "${commitId}")
-		echo ${versionLine} >> CHANGELOG.md
+		echo -e ${versionLine} >> CHANGELOG.md
 
 	elif [[ $line =~ ^([a-f0-9]+)\ (.*)$ ]]
 		then
@@ -139,7 +139,7 @@ do
 			issueLine=$(applyTemplateFile "${issueTemplate}" issueUrl "${issueUrl}" issueId "${issue:1}" commitId "${commitId}")
 			commitLine=${commitLine//${issue}/${issueLine}}
 		done
-		echo ${commitLine} >> CHANGELOG.md
+		echo -e ${commitLine} >> CHANGELOG.md
 	fi
 
 done <<< "${log}"

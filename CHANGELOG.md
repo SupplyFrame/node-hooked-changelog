@@ -1,5 +1,5 @@
 # Node Hooked Changelog Changelog
-##[v0.0.4](https://github.com/SupplyFrame/node-hooked-changelog/commit/01dbbd5b007f7514c383afed7d817c94ed2b20e9)
+##[v0.0.4](https://github.com/SupplyFrame/node-hooked-changelog/commit/6b2f3f9d071537757021f378849376f69952e186)
 - Added 3rd argument to allow local usage of build-changelog.sh - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/dc2a80025d7a8323854a3d45943d0a8d9ffadf9d)
 - Fixed bug causing second commitish to be ignored in build-changelog.sh - [view commit](https://github.com/SupplyFrame/node-hooked-changelog/commit/aed95eceec24ad03f77b82a107e04168658f2857)
 ##[v0.0.3](https://github.com/SupplyFrame/node-hooked-changelog/commit/9d19d4b7c6364e2365effb9b7483c152d7263799)
