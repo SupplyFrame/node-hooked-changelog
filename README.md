@@ -1,4 +1,4 @@
-# Node Hooked Changelog - A changelog generator for npm versioned projects
+# Node Hooked Changelog
 This is a simple BASH based changelog generator for NodeJS projects that are versioned using `npm version`. It uses a git post-commit hook to trigger, and looks for the standard commit message format produced by `npm version`, e.g. `v0.0.1`. When it detects a commit that contains a message in this format it runs the generator script and produces a Markdown formatted changelog by default.
 
 You can customize the changelog format by specifying your own simple template files.
