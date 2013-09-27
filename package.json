@@ -1,7 +1,7 @@
 {
   "name": "node-hooked-changelog",
   "description": "Installs a post-commit hook that triggers a changelog update whenever a commit containing a new version number is created, this works best with `npm version`.",
-  "version": "0.0.5",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "install": "bash ./install-hooks.sh"
@@ -11,11 +11,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/isaacs/npm.git"
+    "url": "http://github.com/SupplyFrame/node-hooked-changelog"
   },
   "changelog": {
     "title": "Node Hooked Changelog",
-    "commit-url": "https://github.com/SupplyFrame/node-hooked-changelog/commit/${commitId}"
+    "commit-url": "https://github.com/SupplyFrame/node-hooked-changelog/commit/${commitId}",
+    "issue-url": "http://github.com/SupplyFrame/node-hooked-changelog/issues/${issueId}"
   },
   "engines": {
     "node": "0.10.x",
