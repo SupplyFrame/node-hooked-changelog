@@ -72,7 +72,7 @@ function applyTemplate() {
 }
 
 #pull log file for given range
-log=$(git log $1...HEAD --pretty=format:"%H %s")
+log=$(git log $1...$2 --pretty=format:"%H %s")
 
 # filter out merge commits
 log=$(echo "${log}" | grep -v '^[a-f0-9]\+\sMerge')
